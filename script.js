@@ -15,3 +15,13 @@ for (let i = 1; i <= num; i++) {
     }
     console.log(star);
 }
+
+//Clousers in js 
+function abcd(){
+    let a =12;
+    return function(){
+        console.log(a);
+    }
+}
+
+abcd();
