@@ -24,6 +24,9 @@ function abcd() {
     }
 }
 
+let result = abcd();
+result();
+
 //Create a Toaster notifications
 
 function toaster(config) {
