@@ -50,7 +50,9 @@ let toasterData = toaster({
 })
 
 toasterData("Good morning pawan")
-toasterData("Have a nice day")
+setTimeout(() => {
+    toasterData("Good night Pawan")
+}, 3000);
 
 let n = 5, num = 1;
 for (let i = 1; i <= n; i++) {
