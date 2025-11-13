@@ -1,48 +1,53 @@
-var timer = 60;
-var score = 0;
-var numb;
+//Create bubbles 
 
+function createBubble() {
+    let count = "";
 
-function increaseScore() {
-    score += 10;
-    document.querySelector(".scoreVal").textContent = score;
-}
-
-function getNewHit() {
-    numb = Math.floor(Math.random() * 10);
-    document.querySelector(".hit").textContent = numb;
-}
-function makBubble() {
-    let num = "";
-    for (let i = 1; i <= 90; i++) {
+    for (let i = 1; i < 90; i++) {
         const bb = Math.floor(Math.random() * 10);
-        num += ` <div class="bb"> ${bb}</div>`
+        count += ` <div class="bb"> ${bb} </div>`
     }
-    document.querySelector(".bubble").innerHTML = num;
+
+    document.querySelector(".bubble").innerHTML = count;
 }
 
-function runTimer() {
-    const timers = setInterval(() => {
-        if (timer > 0) {
-            timer--;
-            document.querySelector(".sec").textContent = timer
+//Create a timer 
+let time = 60;
+function getTime() {
+    var timer = setInterval(() => {
+        if (time > 0) {
+            time--;
+            document.querySelector(".sec").textContent = time;
         } else {
-            clearInterval(timers)
-            document.querySelector(".bubble").innerHTML=`<h1>Your Score is ${score}</h1>`;
+            clearInterval(timer);
+            document.querySelector(".bubble").textContent = `Your score is ${score}`
         }
     }, 1000)
 }
 
+//Create hit
+var hitCount = 0;
+function getHit() {
+    hitCount = Math.floor(Math.random() * 10);
+    document.querySelector(".hit").textContent = hitCount;
+}
+
+//Scores
+var score = 0;
+function getScore() {
+    score += 10;
+    document.querySelector(".scoreVal").textContent = score;
+}
+
 document.querySelector(".bubble").addEventListener("click", function (det) {
-    let clickeNum = Number(det.target.textContent);
-    if (clickeNum === numb) {
-        increaseScore();
-        getNewHit()
-        makBubble()
+    const targetNum = Number(det.target.textContent);
+    if (targetNum === hitCount) {
+        getScore();
+        getHit();
+        createBubble();
     }
 })
 
-
-runTimer()
-makBubble();
-getNewHit();
+createBubble();
+getTime();
+getHit();
