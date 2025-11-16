@@ -62,3 +62,13 @@ for (let i = 1; i <= n; i++) {
   }
   console.log(row);
 }
+
+
+//Add pattern
+let p = 5;
+
+for (let i = 1; i <= p; i++) {
+  let spaces = " ".repeat(p - i);
+  let stars = "* ".repeat(i);
+  console.log(spaces + stars);
+}
