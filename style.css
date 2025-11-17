@@ -1,12 +1,14 @@
-h1{
+h1 {
     background-color: yellow;
     color: red;
 }
 
-table{
-    width:500px ;
+table {
+    width: 500px;
     height: 50px;
     border: 2px;
     border-color: red;
-
+    border-bottom: 50px;
+    display: flex;
+    align-items: center;
 }
