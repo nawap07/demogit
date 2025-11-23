@@ -89,12 +89,35 @@ greetUser("Pawan", welcomeMessage);
 
 
 function multiplier(x) {
-  return function (y) {
-    return x * y;
-  };
+    return function (y) {
+        return x * y;
+    };
 }
 
 const double = multiplier(2);
 console.log(double(5)); // Output: 10
+
+
+
+//Higher order fuction Map Filter Reduce
+
+
+//MAP
+const nums = [1, 2, 3, 4];
+const squared = nums.map(n => n * n);
+
+console.log(squared);
+
+//FILTER
+const num1 = [10, 15, 20, 25];
+const above20 = num1.filter(n => n > 20);
+
+console.log(above20);
+
+//REDUCE
+const numss = [5, 10, 15];
+const total = numss.reduce((sum, n) => sum + n, 0);
+
+console.log(total); // 30
 
 
