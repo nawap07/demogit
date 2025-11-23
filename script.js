@@ -35,7 +35,7 @@ function toaster(config) {
         div.className = ``;
         div.textContent = str;
         document.querySelector(".parent").appendChild(div)
-        setTimeout(() => { 
+        setTimeout(() => {
             document.querySelector(".parent").removeChild(div)
         }, config.duration * 1000);
     }
@@ -56,11 +56,11 @@ setTimeout(() => {
 
 let n = 5, num = 1;
 for (let i = 1; i <= n; i++) {
-  let row = "";
-  for (let j = 1; j <= i; j++) {
-    row += num++ + " ";
-  }
-  console.log(row);
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+        row += num++ + " ";
+    }
+    console.log(row);
 }
 
 
@@ -68,7 +68,33 @@ for (let i = 1; i <= n; i++) {
 let p = 5;
 
 for (let i = 1; i <= p; i++) {
-  let spaces = " ".repeat(p - i);
-  let stars = "* ".repeat(i);
-  console.log(spaces + stars);
+    let spaces = " ".repeat(p - i);
+    let stars = "* ".repeat(i);
+    console.log(spaces + stars);
 }
+
+
+//Higher order functions
+
+function greetUser(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+
+function welcomeMessage() {
+    console.log("Welcome to JavaScript!");
+}
+
+greetUser("Pawan", welcomeMessage);
+
+
+function multiplier(x) {
+  return function (y) {
+    return x * y;
+  };
+}
+
+const double = multiplier(2);
+console.log(double(5)); // Output: 10
+
+
