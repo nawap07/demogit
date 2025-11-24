@@ -120,4 +120,18 @@ const total = numss.reduce((sum, n) => sum + n, 0);
 
 console.log(total); // 30
 
+// Write a function that takes an array of numbers and returns the sum of even numbers.
+
+function getSumOFEvenNum(arr) {
+    let sum = 0;
+    for (let num of arr) {
+        if (num % 2 === 0) {
+            sum += num;
+        }
+    }
+    return sum;
+}
+
+console.log(getSumOFEvenNum([2, 7, 9, 4, 8, 6]));
+
 
