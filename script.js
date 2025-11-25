@@ -135,3 +135,14 @@ function getSumOFEvenNum(arr) {
 console.log(getSumOFEvenNum([2, 7, 9, 4, 8, 6]));
 
 
+// using Reduce method
+
+let count = [2, 4, 5, 7, 8, 22];
+
+let data = count.reduce((sum, a) => {
+    if (a % 2 === 0) {
+        sum += a;
+    }
+    return sum
+}, 0)
+console.log(data);
