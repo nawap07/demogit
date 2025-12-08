@@ -112,29 +112,16 @@
 
 // }
 
-let Price = Number(prompt("Please Enter Price"));
+ 
+// Loops in js
 
-if (Price >= 500) {
-    console.log("500 Notes", Math.floor(Price / 500));
-    Price = (Price % 500);
+for(let i=1;i<=100;i++){
+     console.log(`I Love You ${i} 😘`,);
 }
-if (Price >= 200 && Price < 500) {
-    console.log("200 Notes", Math.floor(Price / 200));
-    Price = (Price % 200);
+
+for(let i=200;i>=100;i--){
+    console.log(i);
 }
-if (Price >= 100 && Price < 200) {
-    console.log("100 Notes", Math.floor(Price / 100));
-    Price = (Price % 100);
-}
-if (Price >= 50 && Price < 100) {
-    console.log("50 Notes", Math.floor(Price / 50));
-    Price = (Price % 50);
-}
-if (Price >= 20 && Price < 50) {
-    console.log("20 Notes", Math.floor(Price / 20));
-    Price = (Price % 20);
-}
-if (Price >= 10 && Price < 20) {
-    console.log("10 Notes", Math.floor(Price / 10));
-    Price = (Price % 10);
-}
+
+
+ 
