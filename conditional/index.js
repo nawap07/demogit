@@ -115,13 +115,13 @@
  
 // Loops in js
 
-for(let i=1;i<=100;i++){
-     console.log(`I Love You ${i} 😘`,);
-}
+// for(let i=1;i<=100;i++){
+//      console.log(`I Love You ${i} 😘`,);
+// }
 
-for(let i=200;i>=100;i--){
-    console.log(i);
-}
+// for(let i=200;i>=100;i--){
+//     console.log(i);
+// }
 
 
  
