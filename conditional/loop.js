@@ -42,3 +42,59 @@
 //         }
 //     }
 // }
+
+//While Loop
+// let i = 1;
+// while (i <= 10) {
+//     console.log(i);
+//     i++;
+// }
+
+// let num = prompt("Guess The Number")
+// while (num !== '10') {
+//     num = prompt("Guess The number")
+// }
+// console.log("Congratulations Pawan");
+
+// Add the  number using While loop
+
+// let num = Number(prompt("Some of all Numbers"));
+
+// if (!num) {
+//     console.log("Write Something");
+// } else {
+//     if (isNaN(num)) {
+//         console.log("Invalid Input");
+//     } else {
+//         if (num > 0) {
+//             let sum = 0;
+//             while (num > 0) {
+//                 let rem = num % 10;
+//                 num = Math.floor(num / 10);
+//                 sum += rem;
+//             }
+//             console.log(sum);
+//         }
+//     }
+// }
+
+//Reverse the Number
+let num = Number(prompt("Some of all Numbers"));
+
+if (!num) {
+    console.log("Write Something");
+} else {
+    if (isNaN(num)) {
+        console.log("Invalid Input");
+    } else {
+        if (num > 0) {
+            let rev = 0;
+            while (num > 0) {
+                let rem = num % 10
+                rev = rev * 10 + rem
+                num = Math.floor(num / 10);
+            }
+            console.log(rev);
+        }
+    }
+}
