@@ -79,22 +79,63 @@
 // }
 
 //Reverse the Number
-let num = Number(prompt("Some of all Numbers"));
+// let num = Number(prompt("Some of all Numbers"));
 
-if (!num) {
-    console.log("Write Something");
-} else {
-    if (isNaN(num)) {
-        console.log("Invalid Input");
-    } else {
-        if (num > 0) {
-            let rev = 0;
-            while (num > 0) {
-                let rem = num % 10
-                rev = rev * 10 + rem
-                num = Math.floor(num / 10);
-            }
-            console.log(rev);
-        }
-    }
-}
+// if (!num) {
+//     console.log("Write Something");
+// } else {
+//     if (isNaN(num)) {
+//         console.log("Invalid Input");
+//     } else {
+//         if (num > 0) {
+//             let rev = 0;
+//             while (num > 0) {
+//                 let rem = num % 10
+//                 rev = rev * 10 + rem
+//                 num = Math.floor(num / 10);
+//             }
+//             console.log(rev);
+//         }
+//     }
+// }
+
+//Find Strong Number;
+
+// let n = Number(prompt("Enter Strong Number"));
+
+// if (!n) {
+//     console.log("Write Something");
+// } else {
+//     if (isNaN(n)) {
+//         console.log("Invalid Input");
+//     } else {
+//         if (n > 0) {
+//             let sum = 0;
+//             let copy = n;
+//             while (n > 0) {
+//                 let rem = n % 10;
+//                 let rev = 1;
+//                 for (let i = 1; i <= rem; i++) {
+//                     rev *= i;
+//                 }
+//                 sum += rev;
+//                 n = Math.floor(n / 10);
+//             }
+//             if (sum === copy) {
+//                 console.log("Strong Number");
+//             } else {
+//                 console.log("Not Strong");
+//             }
+//         } else {
+//             console.log("Should be +ve and more than 0");
+//         }
+//     }
+// }
+
+// DO-While Loop 
+
+// let i = 1;
+// do {
+//     console.log("Good Morning Pawan " + i + "😘" );
+//     i++;
+// } while (i < 10)
