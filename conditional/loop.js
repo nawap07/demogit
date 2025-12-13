@@ -132,10 +132,101 @@
 //     }
 // }
 
-// DO-While Loop 
+// DO-While Loop
 
 // let i = 1;
 // do {
 //     console.log("Good Morning Pawan " + i + "😘" );
 //     i++;
 // } while (i < 10)
+
+
+// let random = Math.floor(Math.random()*100 +1);
+// console.log(Guess);
+
+// Guess The currect Ans
+
+
+// let random = Math.floor(Math.random() * 100) + 1;
+
+// let guess = -1;
+
+// while (guess !== random) {
+//     guess = Number(prompt("Guess the Number"))
+//     if (isNaN(guess) || guess < 1 || guess > 100) {
+//         console.log("Numbers Between 1-100 , Try Again");
+//     }
+
+//     if (guess > random) {
+//         console.log("To High , Try Agin");
+//     } else if (guess < random) {
+//         console.log("Too Low , Try Agian");
+//     } else {
+//         console.log("Congritulations Your Guess is Right", guess);
+//     }
+// }
+
+// Add Only 8 Attempt to find currect The Guess
+
+// let rand = Math.floor(Math.random() * 100) + 1;
+// let guess = -1
+// let attempts = 0;
+// let maxAttempts = 8;
+
+// while (attempts < maxAttempts) {
+//     guess = Number(prompt("Guess the Number ", attempts, "Out Of", maxAttempts));
+//     attempts++;
+//     if (isNaN(guess) || guess < 1 || guess > 100) {
+//         console.log("Number b/n 1-100 , Try Again");
+//         continue;
+//     }
+
+//     if (guess > rand) {
+//         console.log("To High , Try Again");
+//     } else if (guess < rand) {
+//         console.log("To Low ,Try Again");
+//     } else {
+//         console.log("Congritulations Your Guess is Correct", guess);
+//         break;
+//     }
+
+//     if (attempts === maxAttempts) {
+//         console.log("You Reach the Max Attempts ; Game Over");
+//         console.log("The Correct Number is ", rand);
+//     }
+// }
+
+//Add Only Ten Attempts
+
+// let random = Math.floor(Math.random() * 100) + 1;
+// let attempts = 0;
+// let maxAttempts = 10;
+// let guess = -1;
+// while (attempts < maxAttempts) {
+//     guess = Number(prompt(`Guess the Number ${attempts} Out Of ${maxAttempts}`));
+//     attempts++;
+
+//     if (isNaN(guess) || guess < 1 || guess > 100) {
+//         console.log(`Guess the Number between 1-100 ; Try Again`);
+//         continue;
+//     }
+
+//     if (guess > random) {
+//         console.log(`Your Guess is Too High ; Please Try Again`);
+//     } else if (guess < random) {
+//         console.log(`Your Guess is Too Low ; Please Try Again`);
+//     } else {
+//         console.log(`Congritulations Your Guess is Correct ${guess}`);
+//         break;
+//     }
+
+//     if (attempts === maxAttempts) {
+//         console.log("Game Over ; You Reach the Max Attempts");
+//         console.log("Correct Number is ", random);
+//     }
+// }
+
+
+
+
+
